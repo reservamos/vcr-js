@@ -149,7 +149,7 @@ const vcr = new VCR(...);
 vcr.matcher = new MyCustomRequestMatcher();
 ```
 
-For more details refer to the [DefaultRequestMatcher](https://github.com/luisAzcuaga/vcr-js/blob/main/src/default-request-matcher.ts) implementation.
+For more details refer to the [DefaultRequestMatcher](https://github.com/reservamos/vcr-js/blob/main/src/default-request-matcher.ts) implementation.
 
 ### Storage
 The library comes with a File storage implementation that saves files in YAML for readibility. However, you may prefer to save the cassettes in a database and in JSON. You can change the storage and file format by creating a different storage implementation.
@@ -184,7 +184,7 @@ Then just initialize VCR with your implementation:
 const vcr = new VCR(new DatabaseStorage());
 ```
 
-For more details refer to the [FileStorage](https://github.com/luisAzcuaga/vcr-js/blob/main/src/file-storage.ts) implementation.
+For more details refer to the [FileStorage](https://github.com/reservamos/vcr-js/blob/main/src/file-storage.ts) implementation.
 
 ### Request pass-through
 You may want certain requests to never be recorded. You can do it this way:
